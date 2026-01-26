@@ -1,0 +1,5 @@
+{
+    "auc_test": 0.79,
+    "recall_sospechoso": 0.8,
+    "threshold": 0.5
+}
