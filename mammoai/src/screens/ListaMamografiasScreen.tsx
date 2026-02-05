@@ -1,3 +1,11 @@
+import {
+  Table,
+  TableHeader,
+  TableHead,
+  TableBody,
+  TableRow,
+  TableCell,
+} from "@/components/ui/table";
 import icon_header from "../assets/icon_header.png";
 
 export const ListaMamografiasScreen = () => {
@@ -10,9 +18,28 @@ export const ListaMamografiasScreen = () => {
       <div>
         <h1 className="text-black font-bold text-xl">Lista de mamografías</h1>
         <p className="text-black text-xs">Cargar mamografías</p>
-        <table>
-            
-        </table>
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead className="w-[100px]">N°</TableHead>
+              <TableHead>Nombre de Paciente</TableHead>
+              <TableHead>N° Documento</TableHead>
+              <TableHead className="text-right">Telefono</TableHead>
+              <TableHead className="text-right">Correo</TableHead>
+              <TableHead className="text-right">Opciones</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow>
+              <TableCell className="font-medium">1</TableCell>
+              <TableCell>Nombre Apellido</TableCell>
+              <TableCell>72727272</TableCell>
+              <TableCell className="text-right">989898765</TableCell>
+              <TableCell className="text-right">ejemplo@gmail.com</TableCell>
+              <TableCell className="text-right">ejemplo@gmail.com</TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
       </div>
     </div>
   );
