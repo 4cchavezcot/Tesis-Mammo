@@ -7,6 +7,7 @@ import {
   TableCell,
 } from "@/components/ui/table";
 import icon_header from "../assets/icon_header.png";
+import { Search, SquarePen, TextAlignJustify } from "lucide-react";
 
 export const ListaMamografiasScreen = () => {
   return (
@@ -20,6 +21,7 @@ export const ListaMamografiasScreen = () => {
         <p className="text-black text-xs">Cargar mamografías</p>
         <Table>
           <TableHeader>
+            <TableRow />
             <TableRow>
               <TableHead className="w-[100px]">N°</TableHead>
               <TableHead>Nombre de Paciente</TableHead>
@@ -36,7 +38,11 @@ export const ListaMamografiasScreen = () => {
               <TableCell>72727272</TableCell>
               <TableCell className="text-right">989898765</TableCell>
               <TableCell className="text-right">ejemplo@gmail.com</TableCell>
-              <TableCell className="text-right">ejemplo@gmail.com</TableCell>
+              <TableCell className="text-right flex gap-2 justify-end">
+                <SquarePen className="h-4 w-4 cursor-pointer" />
+                <TextAlignJustify className="h-4 w-4 cursor-pointer" />
+                <Search className="h-4 w-4 cursor-pointer" />
+              </TableCell>
             </TableRow>
           </TableBody>
         </Table>
